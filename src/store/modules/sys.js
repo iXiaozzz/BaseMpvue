@@ -5,6 +5,7 @@ const sys = {
   mutations: {
     UPDATE_MAIN_WRAP_HEIGHT: (state, data) => {
       state.mainWrapHeight = data
+      console.log(state.mainWrapHeight)
     }
   },
   actions: {

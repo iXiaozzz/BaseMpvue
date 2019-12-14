@@ -3,7 +3,6 @@ const user = {
     customerId: ''
   },
   mutations: {
-
     CUSTOMER_ID: (state, data) => {
       state.customerId = data
     }

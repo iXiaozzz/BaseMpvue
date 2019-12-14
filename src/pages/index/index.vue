@@ -56,16 +56,14 @@ export default {
   },
   created() {
     this.isFirst = false
-    console.log(111)
+    this.$store.dispatch('updateMainWrapHeight', 1111)
+    console.log('store:', this.$store.getters)
   },
   onShow() {
     // if (!this.isFirst) return false
     Api.getNewsLatest().then(res => {
       console.log('新闻：', res)
     })
-  },
-  mounted() {
-    console.log(222)
   },
   methods: {
     bindViewTap() {
